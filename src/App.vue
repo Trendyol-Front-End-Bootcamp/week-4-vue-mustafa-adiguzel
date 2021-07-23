@@ -12,6 +12,9 @@
     box-sizing: border-box;
     font-family: 'Audiowide', cursive !important;
     background: #212121;
-
+}
+#app {
+  width: 1200px;
+  margin: 0 auto;
 }
 </style>

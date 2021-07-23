@@ -1,5 +1,5 @@
 export default {
     starships: [],
-    
-    next: ''
+    next: '',
+    detail: {}
 }

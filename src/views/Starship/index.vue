@@ -14,28 +14,36 @@
      <Breadcrumb
         :propItems="propItems"
       />
-    
-     <StarshipDetail :starship = "starShip" />
+      
+     <div v-if="loading" class="spinner-container">
+       <GSpinner />
+     </div>
+
+     <StarshipDetail
+       v-else-if="starShip"
+       :starship="starShip"
+     />
   </div>
 </template>
 
 <script>
 import StarshipDetail from '@/components/Starship/StarshipDetail'
 import Breadcrumb from '@/components/Shared/Breadcrumb'
-import axios from 'axios'
 import GButton from '@trendyol-js/grace/core/GButton';
 import GTooltip from '@trendyol-js/grace/core/GTooltip';
+import GSpinner  from '@trendyol-js/grace/core/GSpinner';
 
 export default {
     components: {
       StarshipDetail,
       GButton,
       GTooltip,
+      GSpinner,
       Breadcrumb
     },
     data(){
       return {
-        starShip: { }
+        loading: false
       }
     },
     computed: {
@@ -46,17 +54,22 @@ export default {
         return [ 
           { text: this.starShipId, href: `/starship/${ this.starShipId }` } 
         ]
+      },
+      starShip(){
+        return this.$store.getters.getDetail
       }
     },
-    async created(){
-        await axios.get(`https://swapi.dev/api/starships/${ this.starShipId }`).then(response => {
-            console.log('data',response.data)
-            this.starShip = response?.data
-        });
+    created(){
+      this.fetchDetail()
     },
     methods: {
       routePrevious(){
         this.$router.push('/')
+      },
+      async fetchDetail(){
+        this.loading = true;
+        await this.$store.dispatch('fetchDetail', this.starShipId)
+        this.loading = false;
       }
     }
 }
@@ -65,5 +78,8 @@ export default {
 <style scoped>
 .detail-container{
   margin-top: 20px;
+}
+.spinner-container{
+  text-align: center;
 }
 </style>

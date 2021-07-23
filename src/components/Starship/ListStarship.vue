@@ -32,7 +32,6 @@ export default {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 1200px;
     column-gap: 20px;
     margin: 0 auto;
 }

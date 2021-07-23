@@ -4,5 +4,8 @@ export default {
     },
     setNext(state, payload) {
         state.next = payload;
+    },
+    setDetail(state, payload) {
+        state.detail = payload;
     }
 };
