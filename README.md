@@ -1,24 +1,24 @@
-# vue-trendyol-assignment
+# Vue Starship Assignment
 
-## Project setup
-```
-npm install
-```
+Made using swapi.dev
+https://swapi.dev/documentation#starships 
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+Technologies
+- Vue
+- Axios
+- Vuex
+- Vue Router
+- Trendyol Grace https://github.com/Trendyol/grace
+## Features
 
-### Compiles and minifies for production
-```
-npm run build
-```
+- Listing starships
+- Search among Starships
+- Read details of a specific starship
+- Paging with the load more button.
 
-### Lints and fixes files
-```
-npm run lint
-```
+# Starship Listing
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+![listing](https://user-images.githubusercontent.com/49120729/126770437-e2f5ec8a-c58e-4392-86a1-439a28f145ad.jpg)
+
+# Detail page
+![detail](https://user-images.githubusercontent.com/49120729/126770447-f818dc85-505b-4fdc-91d7-cd5f4442d3bf.jpg)
