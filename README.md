@@ -1,5 +1,7 @@
 # Vue Starship Assignment
 
+Demo: https://week-4-vue-mustafa-adiguzel.netlify.app/
+
 Made using swapi.dev
 https://swapi.dev/documentation#starships 
 
