@@ -2,20 +2,24 @@
   <div>
       <Search />
       <ListStarship />
+      <LoadMore />
   </div>
 </template>
 
 <script>
 import ListStarship from '@/components/Starship/ListStarship'
 import Search from '@/components/Search/Search'
+import LoadMore from '@/components/Shared/LoadMore'
+
 export default {
   components: {
+    Search,
     ListStarship,
-    Search
+    LoadMore
   },
   created(){
-     this.$store.dispatch('fetchStarships', 1)
-  }
+      this.$store.dispatch('fetchStarships')
+  },
 }
 </script>
 

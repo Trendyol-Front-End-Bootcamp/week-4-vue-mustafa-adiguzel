@@ -4,5 +4,8 @@ export default {
     },
     getDetail(state){
         return state.detail;
+    },
+    loadMoreState(state){
+        return state.next
     }
 };
