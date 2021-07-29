@@ -17,6 +17,7 @@ Technologies
 - Listing starships
 - Search among Starships
 - Read details of a specific starship
+- Load more starships with a load more button
 
 # Starship Listing
 
