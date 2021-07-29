@@ -1,22 +1,26 @@
-# React Rick and Morty Assignment
+# Vue Starship Assignment
+
+Demo: https://week-4-vue-mustafa-adiguzel.netlify.app/
 
 Made using swapi.dev
-https://rickandmortyapi.com/
+https://swapi.dev/documentation#starships 
 
 Technologies
-- React
+- Vue
+- Axios
+- Vuex
+- Vue Router
+- Trendyol Grace https://github.com/Trendyol/grace
 
 ## Features
 
-- Listing Rick and Morty characters
-- Search among characters
-- Read details of a specific character
-- Paging with the load more button.
+- Listing starships
+- Search among Starships
+- Read details of a specific starship
 
-# Character Listing
+# Starship Listing
 
-![homepage](https://user-images.githubusercontent.com/49120729/127483072-0922572f-4be5-4d56-9dd0-728cc7ebb05d.jpg)
+![listing](https://user-images.githubusercontent.com/49120729/126770437-e2f5ec8a-c58e-4392-86a1-439a28f145ad.jpg)
 
-# Character Detail page
-
-![morty_detail](https://user-images.githubusercontent.com/49120729/127483101-7b70bab5-b17d-486a-80a5-4500c998a7fb.jpg)
+# Detail page
+![detail](https://user-images.githubusercontent.com/49120729/126770447-f818dc85-505b-4fdc-91d7-cd5f4442d3bf.jpg)
