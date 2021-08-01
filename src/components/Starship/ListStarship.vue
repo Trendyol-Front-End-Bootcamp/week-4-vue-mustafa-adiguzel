@@ -1,7 +1,7 @@
 <template>
     <div class="starship-list">
         <Starship 
-            v-for="starship in Starships"
+            v-for="starship in starships"
             :key="shipKeyGenerator(starship)"
             :starship="starship"
         />
@@ -15,7 +15,7 @@ export default {
         Starship
     },
     computed: {
-        Starships(){
+        starships(){
             return this.$store.getters.getStarships
         },
     },

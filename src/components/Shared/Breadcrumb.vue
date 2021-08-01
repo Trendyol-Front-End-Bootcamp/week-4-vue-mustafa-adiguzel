@@ -12,7 +12,7 @@ import GBreadcrumb  from '@trendyol-js/grace/core/GBreadcrumb';
 
 export default {
     props: {
-        propItems: {
+        breadCrumbItems: {
             type: Array,
             default: null
         }
@@ -21,8 +21,8 @@ export default {
         GBreadcrumb 
     },
     mounted(){
-      if(this.propItems && this.propItems.length > 0){
-          this.propItems.forEach(item => {
+      if(this.breadCrumbItems && this.breadCrumbItems.length > 0){
+          this.breadCrumbItems.forEach(item => {
               this.items.push(item);
           })
       } 

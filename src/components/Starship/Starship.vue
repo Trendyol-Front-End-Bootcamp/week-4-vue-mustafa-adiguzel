@@ -1,16 +1,16 @@
 <template>
   <div class="starship-card">
-      <p>
+      <p v-if="starship.name">
         <span>Name</span>
         {{ starship.name }}
       </p>
       
-      <p>
+      <p v-if="starship.model">
         <span>Model</span>
         {{ starship.model }}
       </p>
       
-      <p>
+      <p v-if="starship.hyperdrive_rating">
         <span>HD Rating</span>
         {{ starship.hyperdrive_rating }}
       </p>

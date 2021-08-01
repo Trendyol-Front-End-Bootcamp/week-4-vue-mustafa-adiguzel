@@ -4,42 +4,42 @@
           <p class="starship-detail-title">
             Details of the Starship
           </p>
-          <p>
+          <p v-if="starship.name">
             <span>Name</span> 
             {{ starship.name }}
           </p>
           
-          <p>
+          <p v-if="starship.model">
             <span>Model</span>
             {{ starship.model }}
           </p>
 
-          <p>
+          <p v-if="starship.passengers">
             <span>Passangers</span>
              {{ starship.passengers }}
           </p>
 
-          <p>
+          <p v-if="starship.hyperdrive_rating">
             <span>HD Rating</span>
              {{ starship.hyperdrive_rating }}
           </p>
 
-          <p>
+          <p v-if="starship.hyperdrive_rating">
             <span>Crew</span>
              {{ starship.crew }}
           </p>
 
-          <p>
+          <p v-if="starship.max_atmosphering_speed">
             <span>Max Speed</span>
              {{ starship.max_atmosphering_speed }}
           </p>
 
-          <p>
+          <p v-if="starship.manufacturer">
             <span>Manufacturer</span>
              {{ starship.manufacturer }}
           </p>
 
-          <p>
+          <p v-if="starship.cargo_capacity">
             <span>Cargo capacity</span>
              {{ starship.cargo_capacity  }}
           </p>

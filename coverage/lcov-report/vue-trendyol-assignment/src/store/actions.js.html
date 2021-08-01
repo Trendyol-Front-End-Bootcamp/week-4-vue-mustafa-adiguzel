@@ -22,30 +22,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">0% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>15/15</span>
+                <span class='fraction'>0/15</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">50% </span>
+                <span class="strong">0% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>1/2</span>
+                <span class='fraction'>0/2</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">0% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>8/8</span>
+                <span class='fraction'>0/8</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">0% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>15/15</span>
+                <span class='fraction'>0/15</span>
             </div>
         
             
@@ -54,7 +54,7 @@
             Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
         </p>
     </div>
-    <div class='status-line high'></div>
+    <div class='status-line low'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -94,31 +94,31 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -126,32 +126,32 @@
 &nbsp;
 export default {
     
-    async fetchStarships({ commit }) {
-        await axios.get(`https://swapi.dev/api/starships/`).then(response =&gt; {
-            let { next, results } = response?.data
-            commit('setStarships', results)
-            commit('setNext', next)
+<span class="fstat-no" title="function not covered" >    as</span>ync fetchStarships({ commit }) {
+<span class="cstat-no" title="statement not covered" >        await axios.get(`https://swapi.dev/api/starships/`).then(<span class="fstat-no" title="function not covered" >re</span>sponse =&gt; {</span>
+            let { next, results } = <span class="cstat-no" title="statement not covered" >response?.data</span>
+<span class="cstat-no" title="statement not covered" >            commit('setStarships', results)</span>
+<span class="cstat-no" title="statement not covered" >            commit('setNext', next)</span>
         });
     },
-    async searchStarships({ commit }, query) {
-        await axios.get(`https://swapi.dev/api/starships/?search=${ query }`).then(response =&gt; {
-            let { next, results } = response?.data
-            commit('setStarships', results)
-            commit('setNext', next)
+<span class="fstat-no" title="function not covered" >    as</span>ync searchStarships({ commit }, query) {
+<span class="cstat-no" title="statement not covered" >        await axios.get(`https://swapi.dev/api/starships/?search=${ query }`).then(<span class="fstat-no" title="function not covered" >re</span>sponse =&gt; {</span>
+            let { next, results } = <span class="cstat-no" title="statement not covered" >response?.data</span>
+<span class="cstat-no" title="statement not covered" >            commit('setStarships', results)</span>
+<span class="cstat-no" title="statement not covered" >            commit('setNext', next)</span>
         });
     },
-    async loadMore({ commit, state }) {
-        <span class="missing-if-branch" title="else path not taken" >E</span>if(state.next){
-            await axios.get(state.next).then(response =&gt; {
-                let { next, results } = response?.data
-                commit('pushStarships', results)
-                commit('setNext', next)
+<span class="fstat-no" title="function not covered" >    as</span>ync loadMore({ commit, state }) {
+<span class="cstat-no" title="statement not covered" >        if(state.next){</span>
+<span class="cstat-no" title="statement not covered" >            await axios.get(state.next).then(<span class="fstat-no" title="function not covered" >re</span>sponse =&gt; {</span>
+                let { next, results } = <span class="cstat-no" title="statement not covered" >response?.data</span>
+<span class="cstat-no" title="statement not covered" >                commit('pushStarships', results)</span>
+<span class="cstat-no" title="statement not covered" >                commit('setNext', next)</span>
             });
         }
     },
-    async fetchDetail({ commit }, starShipId) {
-        await axios.get(`https://swapi.dev/api/starships/${ starShipId }`).then(response =&gt; {
-            commit('setDetail', response.data)
+<span class="fstat-no" title="function not covered" >    as</span>ync fetchDetail({ commit }, starShipId) {
+<span class="cstat-no" title="statement not covered" >        await axios.get(`https://swapi.dev/api/starships/${ starShipId }`).then(<span class="fstat-no" title="function not covered" >re</span>sponse =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >            commit('setDetail', response.data)</span>
         });
     }
 };
@@ -162,7 +162,7 @@ export default {
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Thu Jul 29 2021 17:18:10 GMT+0300 (GMT+03:00)
+                at Sun Aug 01 2021 12:44:59 GMT+0300 (GMT+03:00)
             </div>
         </div>
         <script src="..\..\..\prettify.js"></script>

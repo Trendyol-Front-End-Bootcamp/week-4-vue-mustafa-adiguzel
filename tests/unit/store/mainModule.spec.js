@@ -1,6 +1,5 @@
 import mainModule from '@/store/index'
 
-
 describe('Main Module Tests', () => {
   it('should fetch Starships', async () => {
 

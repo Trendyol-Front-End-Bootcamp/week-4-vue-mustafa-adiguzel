@@ -12,7 +12,7 @@
      </GTooltip>
 
      <Breadcrumb
-        :propItems="propItems"
+        :breadCrumbItems="breadCrumbItems"
       />
       
      <div v-if="loading" class="spinner-container">
@@ -50,9 +50,12 @@ export default {
       starShipId(){
         return this.$route.params.id
       },
-      propItems(){
+      breadCrumbItems(){
         return [ 
-          { text: this.starShipId, href: `/starship/${ this.starShipId }` } 
+          { 
+            text: this.starShipId, 
+            href: `/starship/${ this.starShipId }` 
+          } 
         ]
       },
       starShip(){
